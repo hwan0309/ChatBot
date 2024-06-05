@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="chatbox">
+        <div id="messages"></div>
+        <input type="text" id="user_input" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var user_input = document.getElementById('user_input').value;
+            var messages = document.getElementById('messages');
+
+            var userMessageDiv = document.createElement('div');
+            userMessageDiv.textContent = 'You: ' + user_input;
+            messages.appendChild(userMessageDiv);
+
+            fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'message=' + user_input
+            })
+            .then(response => response.json())
+            .then(data => {
+                var botMessageDiv = document.createElement('div');
+                botMessageDiv.textContent = 'Bot: ' + data.response;
+                messages.appendChild(botMessageDiv);
+            });
+        }
+    </script>
+</body>
+</html>

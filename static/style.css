@@ -1,0 +1,22 @@
+#chatbox {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#messages {
+    height: 300px;
+    overflow-y: scroll;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#user_input {
+    width: calc(100% - 60px);
+    padding: 5px;
+}
+
+button {
+    padding: 5px;
+}

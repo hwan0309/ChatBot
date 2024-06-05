@@ -1,0 +1,42 @@
+{
+    'id': 'c0eb60ab-06c4-4d8d-a31a-454361e4fa4c',
+    'generations': [
+        {
+            'text': ' 난제들을 해결할 수 있을 것이다."-존 매카시(John McCarthy) 교수"인간은 생각하는 존재다. 인간은 스스로 생각하지 않고 행동하는 것은 불가능하다."-찰스 다윈(Charles Darwin) 교수"인간은 자신',
+            'tokens': 64
+        }
+    ],
+    'usage': {
+        'prompt_tokens': 22,
+        'generated_tokens': 64,
+        'total_tokens': 86
+    },
+{
+    'id': '2f9c0346-7258-4b47-bd35-90a63a0686eb',
+    'generations': [
+        {
+            'text': ' 카카오프렌즈가 5월 1일부터 6일까지 서울페스타 2024에 참여해 황금연휴 기간 서울 곳곳에서 카카오프렌즈를 활용한 행사로 나들이객들과 관광객들에게 색다른 즐거움을 선사할 계획이라고 29일 밝혔다.',
+            'tokens': 51
+        }
+    ],
+    'usage': {
+        'prompt_tokens': 401,
+        'generated_tokens': 51,
+        'total_tokens': 452
+    }
+},
+{
+    'id': '0bacf513-ec4d-40e8-a747-8852ad982e19',
+    'generations': [
+        {
+            'text': ' 10월[EOS]',
+            'tokens': 3
+        }
+    ],
+    'usage': {
+        'prompt_tokens': 348,
+        'generated_tokens': 3,
+        'total_tokens': 351
+    }
+}
+}
